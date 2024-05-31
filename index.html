@@ -15,8 +15,14 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>portafolio2</title>
+    <!-- icono de la pagina     -->
+    <link rel="icon" type="image/png" href="/assets/img/iconoportafolio.png">    
+
+    <title>Portafolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="/assets/Js/script.js"></script>
+    
 </head>
 
 <body>
@@ -25,16 +31,16 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="#">Tony</a>
+                <a href="#inicio">Tony</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#habilidades" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#proyectos" onclick="seleccionar()">PROYECTOS</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" onclick="cerrarMenu()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="cerrarMenu()">SOBRE MI</a></li>
+                    <li><a href="#habilidades" onclick="cerrarMenu()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="cerrarMenu()">ESTUDIOS</a></li>
+                    <li><a href="#proyectos" onclick="cerrarMenu()">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="cerrarMenu()">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -50,13 +56,12 @@
                 <img src="./assets/img/foto de perfil.jpeg" alt="foto de perfil">
             </div>
             <h1>ANTONY CORPAS</h1>
-            <h2>Desarrollador Full-Stack</h2>
+            <h2>Desarrollador Web Fornt-End</h2>
             <div class="redes">
                 <!-- iconos de la redes -->
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-square-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/antony-corpas-3007542b8/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SoyTonny" target="_blank"><i class="fa-brands fa-square-github"></i></a>
             </div>
         </div>
     </section>
@@ -64,10 +69,8 @@
     <!-- seccion sobre mi -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobremi</h2>
-            <p>Hola soy<span> Antony Corpas</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-                facere itaque. Voluptatibus quidem a sint doloremque, eius aspernatur iure, deserunt et cum ratione
-                nihil ducimus officia molestiae quam facere sequi.</p>
+            <h2>Sobre mi</h2>
+            <p>Hola soy<span> Antony Corpas</span> Desarrolladora front-end apasionado por la programación y la resolución de problemas tecnológicos. Poseo experiencia en el desarrollo de proyectos académicos y ahora busco ampliar mi experiencia en un entorno profesional para fortalecer mis habilidades y contribuir al desarrollo de soluciones innovadoras. Soy una persona con mentalidad de crecimiento y mejora continua. Tengo gran capacidad de aprendizaje y adaptación, y estoy dispuesta a asumir nuevos retos. Me motiva trabajar en equipo y colaborar con otros profesionales para alcanzar objetivos comunes.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -84,12 +87,12 @@
                             <strong>
                                 Numero de contacto
                             </strong>
-                            +57 300 333 3333
+                            +57 300 1369039
                         </li>
 
                         <li>
                             <strong>Correo Electronico</strong>
-                            antonycorreo@gmail.com
+                            antonycorpas24@gmail.com
                         </li>
 
                         <li>
@@ -107,14 +110,10 @@
                 <div class="col">
                     <h3>Intereses</h3>
                     <div class="contenedor-intereses">
-                        <div class="intereses">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>League Of Legends</span>
-                        </div>
 
                         <div class="intereses">
                             <i class="fa-solid fa-eye"></i>
-                            <span>Ver anime</span>
+                            <span>Ver series</span>
                         </div>
 
                         <div class="intereses">
@@ -130,11 +129,12 @@
                     </div>
                 </div>
             </div>
-
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+            <a href="./assets/files/CVAntonyCorpas.pdf" download="CV_Antony_Corpas.pdf" class="boton-descarga">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -210,40 +210,36 @@
 
                 <div class="tarjeta">
                     <div class="imgTarjeta">
-                        <img class='icono__habilidad' src="./assets/img/svg/typescript.svg" alt="TypeScript">
+                        <img class='icono__habilidad' src="./assets/img/svg/react.svg" alt="TypeScript">
                     </div>
-                    <span class="tituloDeTarjeta">TypeScript</span>
+                    <span class="tituloDeTarjeta">React</span>
                 </div>
             </div>
         </container>
     </section>
 
-    <!-- SECCION CURRICULUM -->
+    <!-- SECCION ESTUDIOS -->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
-            <h2>Curriculum</h2>
+            <h2>Estudios</h2>
             <div class="fila">
                 <div class="col izquierda">
                     <h3>Educacion</h3>
                     <div class="item izq">
-                        <h4>Arte y multimedia</h4>
-                        <span class="casa">Universidad de Oxfor</span>
-                        <span class="flecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, in! Temporibus ratione
-                            voluptates debitis pariatur recusandae animi a nesciunt culpa sunt, ab quas, hic alias? Ex
-                            ipsa aut assumenda quia.</p>
+                        <h4></h4>
+                        <span class="casa">Academlo</span>
+                        <span class="flecha">2024</span>
+                        <!-- <p>Academlo es una escuela de programación en linea es una escuela de programacion en linea desde mexico, aqui aprendi los fundamentos de desarrollo web, lo que es HTML, JavaScript y css, tambien aprendi usar la libreria de REACT con Redux y otras librerias, a medida de todo el bootcam tambien desarrolle mi logica de programacion</p> -->
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
 
                     <div class="item izq">
-                        <h4>Arte y multimedia</h4>
-                        <span class="casa">Universidad de Oxfor</span>
-                        <span class="flecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, in! Temporibus ratione
-                            voluptates debitis pariatur recusandae animi a nesciunt culpa sunt, ab quas, hic alias? Ex
-                            ipsa aut assumenda quia.</p>
+                        <h4></h4>
+                        <span class="casa">Sena</span>
+                        <span class="flecha">2021 - 2023</span>
+                        <!-- <p>En esta carrera pude aprender una parte mas de como funcionan el mundo atraves del marketing, aprendi la importancia de usar las palabras claves, estrategias mercadeo, la importancia de forgar lasos comerciales y analizar el mercado segun matrices que diagnostican cual es una oportunidad en el mismo.</p> -->
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -251,26 +247,22 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
+                    <h3>Titulo</h3>
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de la compañia</span>
-                        <span class="flecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, in! Temporibus ratione
-                            voluptates debitis pariatur recusandae animi a nesciunt culpa sunt, ab quas, hic alias? Ex
-                            ipsa aut assumenda quia.</p>
+                        <h4>Desarrollador web front-end</h4>
+                        <span class="casa"></span>
+                        <span class="flecha"></span>
+                        <p></p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
 
                     <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de la compañia</span>
-                        <span class="flecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, in! Temporibus ratione
-                            voluptates debitis pariatur recusandae animi a nesciunt culpa sunt, ab quas, hic alias? Ex
-                            ipsa aut assumenda quia.</p>
+                        <h4>Tecnologo en gestion de mercados</h4>
+                        <span class="casa"></span>
+                        <span class="flecha"></span>
+                        <p></p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -286,43 +278,56 @@
             <h2>PROYECTOS</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
+                    <a class="desplegable" href="https://pokedexreactac.netlify.app/" target="_blank">
+                        
+                        <img src="https://es.digitaltrends.com/wp-content/uploads/2023/02/New_Pokemon_Animated_Series_Captain_Pikachu_Artwork.jpg" alt="Pokemon">
+                        <div class="overlay">
+                            <h3>Pokedex</h3>
+                            <p>Api de pokemones</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
+                    <a class="despegable" href="https://rickymortyac.netlify.app/" target="_blank">
+                        <img src="https://www.clacktv.cl/vtrcontent/media/2022/08/rick-and-morty-season-4-social.jpeg" alt="Rick y morty">
+                        <div class="overlay">
+                            <h3>Rick y morty</h3>
+                            <p>Api de personajes de la serie</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
+                    <a href="https://galletadelafortunareact1.netlify.app/" target="_blank">
+
+                        <img src="https://i.pinimg.com/736x/6a/88/95/6a8895b0222b3cf35394dd0e6a6e074f.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Galletas de la fortuna</h3>
+                            <p>Por aprueba tu fortuna</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
+                    <a href="https://climaac.netlify.app/" target="_blank" >
+
+                        <img src="https://cdn0.geoenciclopedia.com/es/posts/8/1/0/tipos_de_clima_18_2_600.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Api del clima</h3>
+                            <p>Consulta la temperatura en de tu ciudad en tiempo real</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
+
+                    <img src="https://www.bsr.cl/wp-content/uploads/2019/01/creacion-comercio-electronico-carro-compra.jpg.webp" alt="">
                     <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
+                        <h3>E-Commers</h3>
+                        <p>Compra todos los productos que necesites aqui</p>
                     </div>
+                    
                 </div>
 
                 <div class="proyecto">
@@ -345,15 +350,17 @@
 
                 <!-- formulario -->
                 <div class="col">
-                    <input type="text" placeholder="Tu nombre">
-                    <input type="text" placeholder="Numero telefonico">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-regular fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
+                    <form id="contact-form" action="https://formspree.io/f/mjvnzzev" method="POST">
+                        <input type="text" name="name" placeholder="Tu Nombre">
+                        <input type="number" name='number' placeholder="Número telefónico">
+                        <input type="email" name='email' placeholder="Dirección de correo">
+                        <input type="text" name="message" placeholder="Tema">
+                        <textarea name="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button type="submit" id="submit-btn">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
                 </div>
 
                 <!-- mapa -->
@@ -369,12 +376,12 @@
                             <li>
                                 <i class="fa-light fa-mobile"></i>
 
-                                llamanos: +57 333 333 3333
+                                llamanos: +57 300 1369039
                             </li>
 
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: aqui@gmail.com
+                                Email: antonycorpas24@gmail.com
                             </li>
                         </ul>
                     </div>
@@ -391,15 +398,11 @@
         </a>
         <div class="redes">
             <!-- iconos de la redes -->
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-square-github"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/antony-corpas-3007542b8/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/SoyTonny" target="_blank"><i class="fa-brands fa-square-github"></i></a>
         </div>
-
     </footer>
-
-    <script src="/assets/Js/script.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+*,
+*::after{
     box-sizing: border-box;
     font-family: 'Work Sans';
     margin: 0;
@@ -69,6 +70,8 @@ html{
     cursor: pointer;
     display: none;
 }
+
+
 
 
 
@@ -193,7 +196,6 @@ html{
 .sobremi .fila .col ul li{
     margin: 12px 0;
 
-
 }
 
 .sobremi .fila .col ul li strong{
@@ -243,7 +245,7 @@ html{
     border: 2px solid #fff;
     width: fit-content;
     display: block;
-    margin: 20 auto;
+    margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
@@ -264,6 +266,10 @@ html{
 
 .sobremi button:hover .overlay{
     width: 100%;
+}
+
+.boton-descarga{
+    text-decoration: none;
 }
 
 /* Aqui comienza las habilidades */
@@ -357,7 +363,7 @@ html{
 }
 
 
-/* Aqui comienza SECCION CURRICULUM */
+/* Aqui comienza SECCION ESTUDIOS */
 
 
 .curriculum{
@@ -401,6 +407,7 @@ html{
 
 .curriculum .fila .derecha{
     border-left: 2px solid #252a2e; 
+   
 }
 
 .curriculum .fila .item{
@@ -518,6 +525,9 @@ html{
     margin: 10px;
     cursor: pointer;
 
+}
+.desplegable{
+    text-decoration: none;
 }
 
 .proyectos .galeria .proyecto img{
@@ -702,6 +712,11 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+.redes a:hover{
+    background-color: #1cb698;
+
 }
 
 /* Aqui comienza la resposividad */
