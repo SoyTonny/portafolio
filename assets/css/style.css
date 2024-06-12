@@ -272,7 +272,7 @@ html{
     text-decoration: none;
 }
 
-/* Aqui comienza las habilidades */
+/* Aqui comienza las habilidades o tecnologias */
 
 .habilidades {
     background-color: #252a2e;
@@ -759,10 +759,6 @@ footer .arriba{
         width: fit-content;
     }
 
-    /* Aqui deberias comenzar habilidades */
-
-    /* Aqui terminar habilidades */
-
     /* Aqui comienza curriculum */
     .curriculum .fila{
         display: block;
@@ -798,4 +794,41 @@ footer .arriba{
         width: 100%;
     }
 
+}
+
+
+ /* Aqui comienza la resposividad de habilidades habilidades */
+@media (min-width: 360px) and (max-width: 767px) {
+   
+
+    .habilidades__container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0px 20px ;
+    }
+
+    .habilidades__caja {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 0;
+    }
+
+    .habilidades__titulo {
+        margin: 0 auto;
+    }
+
+    .habilidades__text {
+        margin: 0 auto;
+
+    }
+
+    .habilidades__img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
