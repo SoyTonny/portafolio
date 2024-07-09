@@ -797,8 +797,8 @@ footer .arriba{
 }
 
 
- /* Aqui comienza la resposividad de habilidades habilidades */
-@media (min-width: 360px) and (max-width: 767px) {
+ /* Aqui comienza la resposividad de tecnologias o habilidades */
+@media (min-width: 320px) and (max-width: 767px) {
    
 
     .habilidades__container {
@@ -816,6 +816,7 @@ footer .arriba{
     }
 
     .habilidades__titulo {
+        font-size: 1.5rem;
         margin: 0 auto;
     }
 
