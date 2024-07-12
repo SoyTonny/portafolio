@@ -519,13 +519,19 @@ html{
 }
 
 .proyectos .galeria .proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     max-width: 340px;
     height: fit-content;
     margin: 10px;
     cursor: pointer;
-
+    background-color: #0a0c0e;
+    border-radius: 20px;
 }
+
 .desplegable{
     text-decoration: none;
 }
@@ -534,7 +540,6 @@ html{
     width: 320px;
     height: 300px;
     display: block;
-
 }
 
 .proyectos .galeria .proyecto .overlay{
@@ -551,9 +556,9 @@ html{
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
-
+    border-radius: 0 0 20px 20px;
 }
-.proyectos .galeria .proyecto .overlay h3{
+.proyectos .galeria .proyecto  .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
 
@@ -565,6 +570,17 @@ html{
 
 .proyectos .galeria .proyecto .overlay:hover h3{
  margin-bottom: 0px;   
+}
+
+
+.proyecto__redes{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    gap: 40px;
+    margin-top: 11px;
 }
 
 /* Aqui comienza la seccion contacto */

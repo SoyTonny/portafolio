@@ -15,14 +15,18 @@
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+    <!-- link de Boxicos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- icono de la pagina     -->
-    <link rel="icon" type="image/png" href="/assets/img/iconoportafolio.png">    
+    <link rel="icon" type="image/png" href="/assets/img/iconoportafolio.png">
 
     <title>Portafolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <script src="/assets/Js/script.js"></script>
-    
+
 </head>
 
 <body>
@@ -63,7 +67,7 @@
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
                 <a href="https://github.com/SoyTonny" target="_blank">
-                    <i class="fa-brands fa-square-github"></i>
+                    <i class='bx bxl-github' style='color:#ffffff'></i>
                 </a>
             </div>
         </div>
@@ -73,7 +77,12 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre mí</h2>
-            <p>Hola soy<span> Antony Corpas</span> Desarrollador Full Stack apasionado por la programación y la resolución de problemas tecnológicos. Poseo experiencia en el desarrollo de proyectos académicos y ahora busco ampliar mi experiencia en un entorno profesional para fortalecer mis habilidades y contribuir al desarrollo de soluciones innovadoras. Soy una persona con mentalidad de crecimiento y mejora continua. Tengo gran capacidad de aprendizaje y adaptación, y estoy dispuesto a asumir nuevos retos. Me motiva trabajar en equipo y colaborar con otros profesionales para alcanzar objetivos comunes.</p>
+            <p>Hola soy<span> Antony Corpas</span> Desarrollador Full Stack apasionado por la programación y la
+                resolución de problemas tecnológicos. Poseo experiencia en el desarrollo de proyectos académicos y ahora
+                busco ampliar mi experiencia en un entorno profesional para fortalecer mis habilidades y contribuir al
+                desarrollo de soluciones innovadoras. Soy una persona con mentalidad de crecimiento y mejora continua.
+                Tengo gran capacidad de aprendizaje y adaptación, y estoy dispuesto a asumir nuevos retos. Me motiva
+                trabajar en equipo y colaborar con otros profesionales para alcanzar objetivos comunes.</p>
 
             <div class="fila">
                 <!-- datos personales -->
@@ -132,7 +141,8 @@
                     </div>
                 </div>
             </div>
-            <a href="./assets/files/CvAntoyCorpasFullStack.pdf" download="CvAntoyCorpasFullStack.pdf" class="boton-descarga">
+            <a href="./assets/files/CvAntoyCorpasFullStack.pdf" download="CvAntoyCorpasFullStack.pdf"
+                class="boton-descarga">
                 <button>
                     Descargar CV <i class="fa-solid fa-download"></i>
                     <span class="overlay"></span>
@@ -299,28 +309,61 @@
             <h2>PROYECTOS</h2>
             <div class="galeria">
                 <div class="proyecto">
-                    <a class="desplegable" href="https://pokedexreactac.netlify.app/" target="_blank">
-                        
-                        <img src="https://es.digitaltrends.com/wp-content/uploads/2023/02/New_Pokemon_Animated_Series_Captain_Pikachu_Artwork.jpg" alt="Pokemon">
-                        <div class="overlay">
-                            <h3>Pokedex</h3>
-                            <p>Api de pokemones</p>
+                    <div class="contenedor_proyecto">
+
+                        <a class="desplegable" href="https://pokedexreactac.netlify.app/" target="_blank">
+                            <img src="https://es.digitaltrends.com/wp-content/uploads/2023/02/New_Pokemon_Animated_Series_Captain_Pikachu_Artwork.jpg"
+                                alt="Pokemon">
+
+                            <div class="overlay">
+                                <h3>Pokedex</h3>
+                                <p>Api de pokemones</p>
+                            </div>
+                        </a>
+
+                        <div class="proyecto__redes">
+                            <a href="https://github.com/SoyTonny/PokedexReactAc" target="_blank"
+                                title="Ver repositorio">
+                                <i class='bx bxl-github' style='color:#ffffff'></i>
+                            </a>
+
+                            <a href="https://pokedexreactac.netlify.app/" target="_blank" title="Ver despliegue">
+                                <i class='bx bx-windows' style='color:#ffffff'></i>
+                            </a>
                         </div>
-                    </a>
+
+                    </div>
                 </div>
 
                 <div class="proyecto">
-                    <a class="despegable" href="https://rickymortyac.netlify.app/" target="_blank">
-                        <img src="https://www.clacktv.cl/vtrcontent/media/2022/08/rick-and-morty-season-4-social.jpeg" alt="Rick y morty">
-                        <div class="overlay">
-                            <h3>Rick y morty</h3>
-                            <p>Api de personajes de la serie</p>
+                    <div class="contenedor_proyecto">
+
+                        <a class="despegable" href="https://rickymortyac.netlify.app/" target="_blank">
+                            <img src="https://www.clacktv.cl/vtrcontent/media/2022/08/rick-and-morty-season-4-social.jpeg"
+                                alt="Rick y morty">
+                            <div class="overlay">
+                                <h3>Rick y morty</h3>
+                                <p>Api de personajes de la serie</p>
+                            </div>
+                        </a>
+
+                        <div class="proyecto__redes">
+                            <a href="https://github.com/SoyTonny/AcRickAndMorty" target="_blank"
+                                title="Ver repositorio">
+                                <i class='bx bxl-github' style='color:#ffffff'></i>
+                            </a>
+
+                            <a href="https://rickymortyac.netlify.app/" target="_blank" title="Ver despliegue">
+                                <i class='bx bx-windows' style='color:#ffffff'></i>
+                            </a>
                         </div>
-                    </a>
+
+                    </div>
                 </div>
 
                 <div class="proyecto">
-                    <a href="https://galletadelafortunareact1.netlify.app/" target="_blank">
+
+                    <a class="desplegable" href="https://galletadelafortunareact1.netlify.app/" target="_blank">
 
                         <img src="https://i.pinimg.com/736x/6a/88/95/6a8895b0222b3cf35394dd0e6a6e074f.jpg" alt="">
                         <div class="overlay">
@@ -328,10 +371,23 @@
                             <p>Por aprueba tu fortuna</p>
                         </div>
                     </a>
+
+                    <div class="proyecto__redes">
+                        <a href="https://github.com/SoyTonny/galleta-fortuna-react" target="_blank"
+                            title="Ver repositorio">
+                            <i class='bx bxl-github' style='color:#ffffff'></i>
+                        </a>
+
+                        <a href="https://galletadelafortunareact1.netlify.app/" target="_blank" title="Ver despliegue">
+                            <i class='bx bx-windows' style='color:#ffffff'></i>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="proyecto">
-                    <a href="https://climaac.netlify.app/" target="_blank" >
+
+                    <a class="desplegable" href="https://climaac.netlify.app/" target="_blank">
 
                         <img src="https://cdn0.geoenciclopedia.com/es/posts/8/1/0/tipos_de_clima_18_2_600.jpg" alt="">
                         <div class="overlay">
@@ -339,26 +395,66 @@
                             <p>Consulta la temperatura en de tu ciudad en tiempo real</p>
                         </div>
                     </a>
+
+                    <div class="proyecto__redes">
+                        <a href="https://github.com/SoyTonny/clima-react" target="_blank"
+                            title="Ver repositorio">
+                            <i class='bx bxl-github' style='color:#ffffff'></i>
+                        </a>
+
+                        <a href="https://climaac.netlify.app/" target="_blank" title="Ver despliegue">
+                            <i class='bx bx-windows' style='color:#ffffff'></i>
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="proyecto">
 
-                    <img src="https://www.bsr.cl/wp-content/uploads/2019/01/creacion-comercio-electronico-carro-compra.jpg.webp" alt="">
-                    <div class="overlay">
-                        <h3>E-Commers</h3>
-                        <p>Compra todos los productos que necesites aqui</p>
+                    <a class="desplegable" href="#" target="_blank">
+                        <img src="https://www.bsr.cl/wp-content/uploads/2019/01/creacion-comercio-electronico-carro-compra.jpg.webp"
+                            alt="">
+                        <div class="overlay">
+                            <h3>E-Commers</h3>
+                            <p>Compra todos los productos que necesites aqui</p>
+                        </div>
+
+                    </a>
+
+                    <div class="proyecto__redes">
+                        <a href="#" target="_blank"
+                            title="Ver repositorio">
+                            <i class='bx bxl-github' style='color:#ffffff'></i>
+                        </a>
+
+                        <a href="#" target="_blank" title="Ver despliegue">
+                            <i class='bx bx-windows' style='color:#ffffff'></i>
+                        </a>
                     </div>
-                    
                 </div>
 
                 <div class="proyecto">
-                    <img src="/assets/img/fondochido.jpeg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografia</p>
-                    </div>
-                </div>
+                    <a class="desplegable" href="#" target="_blank">
+                        <img src="/assets/img/fondochido.jpeg" alt="">
+                        <div class="overlay">
+                            <h3>Proximamente</h3>
+                            <p>Proximamente</p>
+                        </div>
+                    </a>
 
+                    <div class="proyecto__redes">
+
+                        <a href="#" target="_blank"
+                            title="Ver repositorio">
+                            <i class='bx bxl-github' style='color:#ffffff'></i>
+                        </a>
+
+                        <a href="#" target="_blank" title="Ver despliegue">
+                            <i class='bx bx-windows' style='color:#ffffff'></i>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
