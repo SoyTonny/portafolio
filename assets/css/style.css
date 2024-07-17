@@ -535,7 +535,7 @@ html {
     width: 320px;
     height: 300px;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .proyectos .galeria .proyecto .overlay {
@@ -854,91 +854,26 @@ footer .arriba {
     /* Aqui comienza la secion de proyectos */
 
     .proyectos {
-        padding: 50px 20px;
+        padding: 40px 10px;
     }
 
     .proyectos .contenido-seccion {
-        max-width: 1024px;
-        margin: auto;
-    }
-
-    .proyectos h2 {
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
+        max-width: 100vw;
     }
 
     .proyectos .galeria {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        width: 100%;
+
     }
 
     .proyectos .galeria .proyecto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        max-width: 340px;
-        height: fit-content;
-        margin: 10px;
-        cursor: pointer;
-        background-color: #0a0c0e;
-        border-radius: 20px;
+        max-width: 320px;
     }
 
-    .desplegable {
-        text-decoration: none;
-    }
-
-    .proyectos .galeria .proyecto img {
+    /* .proyectos .galeria .proyecto img {
         width: 320px;
         height: 300px;
         display: block;
-        object-fit: fill;
-    }
-
-    .proyectos .galeria .proyecto .overlay {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        transition: 1s;
-        font-size: 18px;
-        letter-spacing: 3px;
-        opacity: 0;
-        border-radius: 0 0 20px 20px;
-    }
-
-    .proyectos .galeria .proyecto .overlay h3 {
-        margin-bottom: 20px;
-        transition: 1s;
-
-    }
-
-    .proyectos .galeria .proyecto .overlay:hover {
-        opacity: 1;
-    }
-
-    .proyectos .galeria .proyecto .overlay:hover h3 {
-        margin-bottom: 0px;
-    }
-
-
-    .proyecto__redes {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 60px;
-        gap: 40px;
-        margin-top: 11px;
-    }
+        object-fit: cover;
+    } */
 }
